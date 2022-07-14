@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Dental.master.cs" Inherits="T_and_J_Dental.Dental" %>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>T and J Dental</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- styles -->
+    <link href="styles.css" rel="stylesheet">
+    <!--icons-->
+    <link href="icons-1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+  </head>
+<body class="">
+      <div class="mb-2 col-lg-12 row">	        
+	           <div class="col-lg-8 mt-2">
+	              <!-- Logo -->
+	              <div class="logo">
+                    <a href="index.aspx">
+	                  <img src="images/logo_T&J.png" style="height: 40%; width: 20%;"/>
+                    </a>
+	              </div>
+	           </div>	  
+               <div class="col-lg-4 mt-2 text-center">
+                   <asp:Label ID="userlbl" runat="server" CssClass="" Font-Size="XX-Large" Font-Bold="true">User Name:</asp:Label>
+                   <asp:Label ID="userNamelbl" runat="server" CssClass="" Font-Size="XX-Large" Font-Bold="true">Name</asp:Label>
+               </div>
+	     </div>
+    <div class="page-content">
+        <div class="container">
+                  <div class="col-md-12 row m-4">
+                      <div class="col-md-6">
+                          <a href="index.aspx" class="btn-success btn btn-lg">HOME</a>                          
+                           <%--<a href="booking.aspx" class="alert-success btn btn-lg"><i class="bi bi-journal-text btn btn-lg"></i>BOOKING</a>--%>
+                      </div>
+                      <div class="col-md-3"></div>
+                      <div class="col-md-3">
+                          <a href="#" class="btn-info btn btn-lg">Profile</a>
+                          <a href="LogIn.aspx" class="btn-danger btn btn-lg">Log Out</a>                          
+                      </div>
+                      
+		  	        <%--<div class="content-box" style="display: block;">
+                        <ul class=" nav list-group">
+                            <!-- Main menu -->
+                            <li><a href="index.aspx"><i class="bi bi-house btn btn-lg"></i>HOME</a></li>
+                            <li><a href="historycard.aspx"><i class="bi bi-card-checklist btn btn-lg"></i>HISTROY CARD</a></li>
+                            <li><a href="booking.aspx"><i class="bi bi-journal-text btn btn-lg"></i>BOOKING</a></li>
+                        </ul>
+                     </div>--%>
+		          </div>
+
+            <form id="form1" runat="server" class="col-md-12">
+                <div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                    </asp:ContentPlaceHolder>
+                </div>
+            </form>
+        </div>
+    </div>
+
+   
+</body>
+</html>
