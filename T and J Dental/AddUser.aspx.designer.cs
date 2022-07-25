@@ -42,15 +42,6 @@ namespace T_and_J_Dental
         protected global::System.Web.UI.WebControls.Button systemusersearch;
 
         /// <summary>
-        /// UserGridView control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView UserGridView;
-
-        /// <summary>
         /// systemUsername control.
         /// </summary>
         /// <remarks>
@@ -114,12 +105,12 @@ namespace T_and_J_Dental
         protected global::System.Web.UI.WebControls.Button Update;
 
         /// <summary>
-        /// Delete control.
+        /// UserGridView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Delete;
+        protected global::System.Web.UI.WebControls.GridView UserGridView;
     }
 }
