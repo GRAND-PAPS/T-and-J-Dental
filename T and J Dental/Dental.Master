@@ -15,8 +15,8 @@
     <!--icons-->
     <link href="icons-1.5.0/font/bootstrap-icons.css" rel="stylesheet">
   </head>
-<body class="">
-      <div class="mb-2 col-lg-12 row">	        
+<body class="container-fluid">
+      <div class="mb-2 row alert-dark">	        
 	           <div class="col-lg-8 mt-2">
 	              <!-- Logo -->
 	              <div class="logo">
@@ -26,12 +26,12 @@
 	              </div>
 	           </div>	  
                <div class="col-lg-4 mt-2 text-center">
-                   <asp:Label ID="userlbl" runat="server" CssClass="" Font-Size="XX-Large" Font-Bold="true">User Name:</asp:Label>
+                   <asp:Label ID="userlbl" runat="server" CssClass="" Font-Size="X-Large" Font-Bold="true">Username:</asp:Label>
                    <asp:Label ID="userNamelbl" runat="server" CssClass="" Font-Size="XX-Large" Font-Bold="true">Name</asp:Label>
                </div>
 	     </div>
     <div class="page-content">
-        <div class="container">
+        <div class="container-fluid">
                   <div class="col-md-12 row m-4">
                       <div class="col-md-6">
                           <a href="index.aspx" class="btn-success btn btn-lg">HOME</a>                          
@@ -39,7 +39,7 @@
                       </div>
                       <div class="col-md-3"></div>
                       <div class="col-md-3">
-                          <a href="#" class="btn-info btn btn-lg">Profile</a>
+                          <a href="#" class="btn-info btn btn-lg">Settings</a>
                           <a href="LogIn.aspx" class="btn-danger btn btn-lg">Log Out</a>                          
                       </div>
                       
@@ -53,7 +53,7 @@
                      </div>--%>
 		          </div>
 
-            <form id="form1" runat="server" class="col-md-12">
+            <form id="form1" runat="server" class="col-md-12 mt-2">
                 <div>
                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
 
@@ -63,6 +63,6 @@
         </div>
     </div>
 
-   
-</body>
+
+</body>    
 </html>

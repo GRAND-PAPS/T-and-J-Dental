@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Addservice.aspx" />
     <Content Include="AddUser.aspx" />
     <Content Include="booking.aspx" />
     <Content Include="bookingform.aspx" />
@@ -1501,6 +1502,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Addservice.aspx.cs">
+      <DependentUpon>Addservice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Addservice.aspx.designer.cs">
+      <DependentUpon>Addservice.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AddUser.aspx.cs">
       <DependentUpon>AddUser.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

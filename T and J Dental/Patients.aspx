@@ -4,13 +4,13 @@
         <div class="col-lg-4"></div>
         <div class="col-lg-8 form-group row"> 
             <div class="col-lg-4">
-                 <asp:TextBox ID="patientfirstname" placeholder="First Name" runat="server" CssClass="fs-3 form-control" aria-descibedby="inputGroup-sizing-lg" Font-Size="X-Large"></asp:TextBox>
+                 <asp:TextBox ID="patientfirstname" placeholder="First Name" runat="server" CssClass="fs-4 form-control" aria-descibedby="inputGroup-sizing-lg" Font-Size="X-Large"></asp:TextBox>
             </div>
             <div class="col-lg-5">
-                 <asp:TextBox ID="patientsurname" placeholder="Surname" runat="server" CssClass="fs-3 form-control" aria-descibedby="inputGroup-sizing-lg" Font-Size="X-Large"></asp:TextBox>
+                 <asp:TextBox ID="patientsurname" placeholder="Surname" runat="server" CssClass="fs-4 form-control" aria-descibedby="inputGroup-sizing-lg" Font-Size="X-Large"></asp:TextBox>
             </div>               
             <div class="col-lg-3">
-                <asp:Button ID="patientsbtn" Text="Search" CssClass="btn btn-primary form-control fs-3" runat="server" OnClick="patientsbtn_Click"/>  
+                <asp:Button ID="patientsbtn" Text="Search" CssClass="btn btn-primary form-control fs-4" runat="server" OnClick="patientsbtn_Click"/>  
             </div>                                       
         </div>           
     </div>

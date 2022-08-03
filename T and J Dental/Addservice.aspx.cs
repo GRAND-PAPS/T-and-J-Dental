@@ -7,16 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace T_and_J_Dental
 {
-    public partial class services : System.Web.UI.Page
+    public partial class Addservice : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
-        }
-
-        protected void newServicesbtn_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Addservice.aspx");
         }
     }
 }

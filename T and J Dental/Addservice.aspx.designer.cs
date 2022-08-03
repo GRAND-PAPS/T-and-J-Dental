@@ -11,26 +11,8 @@ namespace T_and_J_Dental
 {
 
 
-    public partial class services
+    public partial class Addservice
     {
-
-        /// <summary>
-        /// textsearchservice control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox textsearchservice;
-
-        /// <summary>
-        /// btnsearchservice control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnsearchservice;
 
         /// <summary>
         /// allservicesbtn control.

@@ -15,7 +15,7 @@
                                </a>                                
                             
 
-                                <a href="Pages/#" class="text-dark a col-md-3 btn">
+                                <a href="Pages/#" class="text-dark a col-md-3 btn disabled">
                                     <div class="text-center card btn btn-info" style="height:16rem;" >
                                          <div class="text-center m-3" style="height: 10rem;">
                                             <img src="icons/report.ico" style=" width:inherit; height:inherit"/>                               

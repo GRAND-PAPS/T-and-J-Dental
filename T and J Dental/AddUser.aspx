@@ -2,11 +2,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
      <div class="col-lg-12 row m-2">
-        <div class="col-lg-6"></div>
+        <div class="col-lg-7"></div>
         <div class="col-lg-4">
-            <asp:TextBox ID="userSearch" runat="server" Placeholder="Search by Surname" CssClass="form-control" Font-Size="X-Large"></asp:TextBox>
+            <asp:TextBox ID="userSearch" runat="server" Placeholder="Search by Username" CssClass="form-control" Font-Size="X-Large"></asp:TextBox>
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-1">
             <asp:Button ID="Userbtnsearch" runat="server" Text="Search" CssClass="btn btn-primary form-control fs-4" OnClick="Userbtnsearch_Click" />
         </div>
     </div>

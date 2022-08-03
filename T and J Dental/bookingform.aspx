@@ -68,9 +68,9 @@
   				        </div>
   			      </div>
                 
-                 <div class="col-lg-12 row">
+                 <div class="col-lg-12 row mt-3">
                     <div class="col-md-6">
-                        <a href="booking.aspx" class="btn btn-lg btn-info fs-4">BACK</a>
+                        <a href="booking.aspx" class="btn btn-lg btn-info fs-4 col-2">BACK</a>
                     </div>
                     <div class="col-lg-6 text-end">
                         <a href="booking.aspx" class="btn btn-lg btn-danger fs-4">CANCEL</a>
