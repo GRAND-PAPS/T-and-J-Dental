@@ -44,10 +44,10 @@
     </div>
 
    <%----Main Div panel----%>
-    <div class="col-12 row">
+    <div class="col-12">
 
               <%--user table results--%>
-            <div class="col-lg-12 mt-3">
+            <div class="col-lg-12 container mt-3">
 <%--                <asp:Panel ID="userpanel" runat="server" CssClass="Card"></asp:Panel>--%>
                 <asp:GridView ID="UserGridView" CssClass="col-12 fs-3" runat="server" AutoGenerateColumns="false" BorderStyle="None">
                     <Columns>
@@ -57,7 +57,7 @@
                         <asp:TemplateField>
                             <ItemTemplate>
                                 <asp:LinkButton ID="UserEdit" runat="server" CssClass="btn btn-info" Text="Edit User" CommandArgument='<%# Eval("UserID") %>' OnClick="UserEdit_Click"></asp:LinkButton>                                
-                                <asp:Button ID="Delete" runat="server" CssClass="btn btn-md btn-danger fs-6" Text="Delete" OnClick="Delete_Click" />
+                                <asp:Button ID="Delete" runat="server" CssClass="btn btn-md btn-danger" Text="Delete" OnClick="Delete_Click" />
                             </ItemTemplate>
                         </asp:TemplateField>
                     </Columns>

@@ -38,7 +38,7 @@
                            <%--<a href="booking.aspx" class="alert-success btn btn-lg"><i class="bi bi-journal-text btn btn-lg"></i>BOOKING</a>--%>
                       </div>
                       <div class="col-md-3"></div>
-                      <div class="col-md-3">
+                      <div class="col-md-3 text-center">
                           <a href="#" class="btn-info btn btn-lg">Settings</a>
                           <a href="LogIn.aspx" class="btn-danger btn btn-lg">Log Out</a>                          
                       </div>

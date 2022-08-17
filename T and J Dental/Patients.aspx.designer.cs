@@ -15,6 +15,15 @@ namespace T_and_J_Dental
     {
 
         /// <summary>
+        /// patientbtretrieve control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button patientbtretrieve;
+
+        /// <summary>
         /// patientfirstname control.
         /// </summary>
         /// <remarks>
@@ -49,5 +58,14 @@ namespace T_and_J_Dental
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label patientslbl;
+
+        /// <summary>
+        /// patientGridView control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView patientGridView;
     }
 }

@@ -29,7 +29,17 @@ namespace T_and_J_Dental
 
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('Successfull Booked');", true);
 
-               // Response.Redirect("booking.aspx");
+                // Response.Redirect("booking.aspx");
+                firstnameinput.Text = String.Empty;
+                othernamesinput.Text = String.Empty;
+                surnameinput.Text = String.Empty;
+                addressTextBox.Text = String.Empty;
+                emailTextBox.Text = String.Empty;
+                phoneTextBox.Text = String.Empty;
+                Bookeddatetextbox.Text = String.Empty;
+                residencetextbox.Text = String.Empty;
+                workTextBox.Text = String.Empty;
+                GenderDropdown.Text = String.Empty;
             }
         }
     }
