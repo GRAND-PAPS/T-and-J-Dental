@@ -8,6 +8,7 @@ using System.Text;
 using System.Data.SqlClient;
 using System.Data;
 using System.Configuration;
+using System.Diagnostics;
 
 namespace T_and_J_Dental
 {
@@ -129,23 +130,23 @@ namespace T_and_J_Dental
 
         protected void Proceed_Click(object sender, EventArgs e)
         {
-            using(SqlConnection con = new SqlConnection(DBconnection.GetConnection()))
-            {
-                con.Open();
-
-
-                con.Close();
-            }
+            
+            Response.Redirect(@"~/historycard.aspx?Bookingid=" +((LinkButton)sender).Text);
         }
 
         protected void Cancel_Click(object sender, EventArgs e)
         {
             using (SqlConnection con = new SqlConnection(DBconnection.GetConnection()))
             {
-                con.Open();
+                //con.Open();
+                //SqlCommand command = new SqlCommand("Delete Booking where Bookingid='"+ + "'");
+                //command.Connection = con;
+                //command.ExecuteNonQuery();
 
+                //con.Close();
 
-                con.Close();
+                //ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('BOOKING HAS BEEN CANCELLED SUCCESSFULLY');", true);
+
             }
         }
     }

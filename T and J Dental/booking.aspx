@@ -31,15 +31,16 @@
 <%--                <asp:Panel ID="Bookingpanel" CssClass="col-12 table-hover" runat="server"></asp:Panel>--%>
                 <asp:GridView ID="BookingDataGrid" runat="server" CssClass="col-12 fs-3" AutoGenerateColumns="false" BorderStyle="None">
                     <Columns>
-                        <asp:BoundField DataField="Firstname" HeaderText="First Name" />
-                        <asp:BoundField DataField="Othernames" HeaderText="Other Name" />
-                        <asp:BoundField DataField="Surname" HeaderText="Surname" />
-                        <asp:BoundField DataField="Phone" HeaderText="Phone Number" />
-                        <asp:BoundField DataField="Gender" HeaderText="Gender" />
-                        <asp:TemplateField>
+                        <%--<asp:BoundField DataField="Bookingid" HeaderText="Booking Id" ReadOnly="true" SortExpression="Bookingid"/>--%>
+                        <asp:BoundField DataField="Firstname" HeaderText="First Name" SortExpression="Firstname" />
+                        <asp:BoundField DataField="Othernames" HeaderText="Other Name" SortExpression="Othernames" />
+                        <asp:BoundField DataField="Surname" HeaderText="Surname" SortExpression="Surname" />
+                        <asp:BoundField DataField="Phone" HeaderText="Phone Number" SortExpression="Phone" />
+                        <asp:BoundField DataField="Gender" HeaderText="Gender" SortExpression="Gender" />
+                        <asp:TemplateField HeaderText="Bookingid" sortExpression="[Bookingid]">
                             <ItemTemplate>
-                                <asp:LinkButton ID="Proceed" Text="Proceed" runat="server" CssClass="btn btn-success" CommandArgument='<%# Eval("Bookingid")%>' OnClick="Proceed_Click"></asp:LinkButton>
-                                <asp:LinkButton ID="Cancel" Text="Cancel" runat="server" CssClass="btn btn-danger" CommandArgument='<%# Eval("Bookingid") %>' OnClick="Cancel_Click"></asp:LinkButton>
+                                <asp:LinkButton ID="Proceed" Text='<%# Bind("Bookingid")%>' runat="server" CssClass="btn btn-success" OnClick="Proceed_Click"></asp:LinkButton>
+                                <asp:LinkButton ID="Cancel" Text='<%# Bind("Bookingid") %>' runat="server" CssClass="btn btn-danger" OnClick="Cancel_Click"></asp:LinkButton>
                             </ItemTemplate>
                         </asp:TemplateField>
                     </Columns>
