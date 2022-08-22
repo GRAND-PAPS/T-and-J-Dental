@@ -20,7 +20,7 @@
     <div class="col-lg-12 m-2 text-center card">
         <asp:Label ID="patientslbl" runat="server" CssClass="" Font-Size="X-Large" Font-Bold="true">PATIENTS RESULTS RECORDS:</asp:Label>
             <div class="fluid-container mt-4">
-                <asp:GridView ID="patientGridView" runat="server" AutoGenerateColumns="false" BorderStyle="Solid">
+                <asp:GridView ID="patientGridView" runat="server" CssClass="col-12 fs-3" AutoGenerateColumns="false">
                     <Columns>
                         <asp:BoundField DataField="Patientid" HeaderText="Patientid"/>
                         <asp:BoundField DataField="Firstname" HeaderText="Firstname" />

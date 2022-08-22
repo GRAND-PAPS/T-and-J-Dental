@@ -27,7 +27,7 @@ namespace T_and_J_Dental
                 con.Close();
 
 
-                ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('Successfull Booked');", true);
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('SUCCESSFULLY BOOKED');", true);
 
                 // Response.Redirect("booking.aspx");
                 firstnameinput.Text = String.Empty;
