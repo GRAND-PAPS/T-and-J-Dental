@@ -38,36 +38,7 @@ namespace T_and_J_Dental
                 BookingDataGrid.DataBind();
 
                 con.Close();
-                //SqlDataAdapter adapter = new SqlDataAdapter(comm);
-                //DataTable dt = new DataTable();
-                //adapter.Fill(dt);
-
-                //StringBuilder sb = new StringBuilder();
-                //sb.Append("<table class='col-lg-12 fs-5'>");
-                //sb.Append("<tr>");
-                // foreach (DataColumn dc in dt.Columns)
-                //{
-                //    sb.Append("<th class='text-primary'>");
-                //    sb.Append(dc.ColumnName.ToUpper());
-                //    sb.Append("</th>");
-                //}
-                //sb.Append("</tr>");
-
-                //foreach(DataRow dr in dt.Rows)
-                //{
-                //    sb.Append("<tr>");
-                //    foreach(DataColumn dc in dt.Columns)
-                //    {
-                //        sb.Append("<th>");
-                //        sb.Append(dr[dc.ColumnName].ToString());                        
-                //        sb.Append("</th>");
-                //    }
-                //    sb.Append("</tr>");
-                //}
-                //sb.Append("</table>");
-                //Bookingpanel.Controls.Add(new Label { Text = sb.ToString() });
-                
-               
+             
             }
 
         }
@@ -80,8 +51,9 @@ namespace T_and_J_Dental
 
                 SqlCommand cmd = con.CreateCommand();
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "select Bookingid, Firstname, Othernames, Surname, Phone, Gender, status from Booking ";
+                cmd.CommandText = "  select Bookingid, Firstname, Othernames, Surname, Phone, Gender from Booking where status = 'Pending' ";
                 cmd.ExecuteNonQuery();
+
                 DataTable dt = new DataTable();
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 da.Fill(dt);
@@ -128,9 +100,19 @@ namespace T_and_J_Dental
 
         }
 
+        //MK: Proceed Button to send the Record to History form 
+        //MK: Will also update the booking table the record which is Used
         protected void Proceed_Click(object sender, EventArgs e)
         {
-            
+            using (SqlConnection con = new SqlConnection(DBconnection.GetConnection()))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("Update Booking set Status='Done' where Bookingid = '"+ ((LinkButton)sender).Text + "' ");
+                cmd.Connection = con;
+                cmd.ExecuteNonQuery();
+
+            }
+
             Response.Redirect(@"~/historycard.aspx?Bookingid=" +((LinkButton)sender).Text);
         }
 

@@ -37,7 +37,7 @@
                         <asp:BoundField DataField="Surname" HeaderText="Surname" SortExpression="Surname" />
                         <asp:BoundField DataField="Phone" HeaderText="Phone Number" SortExpression="Phone" />
                         <asp:BoundField DataField="Gender" HeaderText="Gender" SortExpression="Gender" />
-                        <asp:TemplateField HeaderText="Bookingid" sortExpression="[Bookingid]">
+                        <asp:TemplateField>
                             <ItemTemplate>
                                 <asp:LinkButton ID="Proceed" Text='<%# Bind("Bookingid")%>' runat="server" CssClass="btn btn-success" OnClick="Proceed_Click"></asp:LinkButton>
                                 <asp:LinkButton ID="Cancel" Text='<%# Bind("Bookingid") %>' runat="server" CssClass="btn btn-danger" OnClick="Cancel_Click"></asp:LinkButton>
